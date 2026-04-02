@@ -25,7 +25,7 @@ const __dirname = path.dirname(__filename);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use(
   cors({
-    origin: CLIENT_URL,
+    origin:["https://smart-campus-management-system-seven.vercel.app"],
     methods:["GET","POST","PUT","DELETE"],
     credentials: true,
   })
